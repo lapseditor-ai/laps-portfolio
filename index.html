@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPS Edictador - Edição de Vídeo Premium</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">LAPS</a>
+            <div class="nav-menu">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="index-en.html" class="nav-lang">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="brain-container">
+                <svg class="brain" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Brain SVG -->
+                    <defs>
+                        <filter id="glowBrain">
+                            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                        <radialGradient id="brainGradient" cx="50%" cy="40%">
+                            <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0a0a12;stop-opacity:1" />
+                        </radialGradient>
+                    </defs>
+                    
+                    <!-- Main Brain Shape -->
+                    <g class="brain-main">
+                        <!-- Left hemisphere -->
+                        <path d="M 60 50 Q 40 80 40 120 Q 40 160 60 180 Q 80 150 90 120 Q 85 80 70 50 Z" fill="url(#brainGradient)" stroke="#00D9FF" stroke-width="0.5" opacity="0.8"/>
+                        
+                        <!-- Right hemisphere -->
+                        <path d="M 140 50 Q 160 80 160 120 Q 160 160 140 180 Q 120 150 110 120 Q 115 80 130 50 Z" fill="url(#brainGradient)" stroke="#00D9FF" stroke-width="0.5" opacity="0.8"/>
+                        
+                        <!-- Brain stem -->
+                        <rect x="95" y="180" width="10" height="35" fill="#00D9FF" opacity="0.6" rx="2"/>
+                    </g>
+                    
+                    <!-- Neurons/Connections -->
+                    <g class="neurons" opacity="0.4">
+                        <circle cx="65" cy="90" r="1.5" fill="#A855F7"/>
+                        <circle cx="135" cy="95" r="1.5" fill="#A855F7"/>
+                        <circle cx="100" cy="120" r="1.5" fill="#00D9FF"/>
+                        <circle cx="75" cy="140" r="1.5" fill="#A855F7"/>
+                        <circle cx="125" cy="140" r="1.5" fill="#A855F7"/>
+                        <line x1="65" y1="90" x2="100" y2="120" stroke="#00D9FF" stroke-width="0.3" opacity="0.5"/>
+                        <line x1="135" y1="95" x2="100" y2="120" stroke="#00D9FF" stroke-width="0.3" opacity="0.5"/>
+                    </g>
+                    
+                    <!-- Glasses -->
+                    <g class="glasses">
+                        <!-- Left lens -->
+                        <rect x="50" y="100" width="25" height="20" rx="4" fill="none" stroke="#00D9FF" stroke-width="1" opacity="0.7"/>
+                        <!-- Right lens -->
+                        <rect x="125" y="100" width="25" height="20" rx="4" fill="none" stroke="#00D9FF" stroke-width="1" opacity="0.7"/>
+                        <!-- Bridge -->
+                        <line x1="75" y1="110" x2="125" y2="110" stroke="#00D9FF" stroke-width="0.5" opacity="0.7"/>
+                        <!-- Reflection left -->
+                        <line class="reflection" x1="55" y1="103" x2="60" y2="108" stroke="#F5F5F5" stroke-width="1" opacity="0" rx="2"/>
+                        <!-- Reflection right -->
+                        <line class="reflection" x1="130" y1="103" x2="135" y2="108" stroke="#F5F5F5" stroke-width="1" opacity="0" rx="2"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="hero-text">
+                <h1 class="hero-title">LAPS<br>EDICTADOR</h1>
+                <p class="hero-subtitle">Editing Beyond Attention</p>
+                <a href="#work" class="btn btn-primary">See Work</a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="work-header">
+            <h2 class="section-title">Featured Work</h2>
+            <p class="section-subtitle">Premium edits for brands that demand excellence</p>
+        </div>
+
+        <div class="work-grid">
+            <!-- Video placeholder 1 -->
+            <div class="work-item" data-index="1">
+                <div class="video-placeholder">
+                    <div class="placeholder-content">
+                        <span class="placeholder-icon">▶</span>
+                        <span class="placeholder-text">Video 01</span>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <h3>Premium Brand Campaign</h3>
+                    <p>Cinematic storytelling for luxury brands</p>
+                </div>
+            </div>
+
+            <!-- Video placeholder 2 -->
+            <div class="work-item" data-index="2">
+                <div class="video-placeholder">
+                    <div class="placeholder-content">
+                        <span class="placeholder-icon">▶</span>
+                        <span class="placeholder-text">Video 02</span>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <h3>Social Content Series</h3>
+                    <p>High-impact edits for maximum engagement</p>
+                </div>
+            </div>
+
+            <!-- Video placeholder 3 -->
+            <div class="work-item" data-index="3">
+                <div class="video-placeholder">
+                    <div class="placeholder-content">
+                        <span class="placeholder-icon">▶</span>
+                        <span class="placeholder-text">Video 03</span>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <h3>Commercial Production</h3>
+                    <p>Results-driven editing for conversion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="section-title">Who is LAPS</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I edit for people who refuse to settle.
+                    </p>
+                    <p class="about-body">
+                        Precision. Obsession. Impact. Every frame serves a purpose. No filler. No templates. Just results that convert.
+                    </p>
+                    <p class="about-body">
+                        From concept to delivery, I'm obsessed with one thing: making your message unforgettable.
+                    </p>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Premium Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50M+</span>
+                        <span class="stat-label">Total Views</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Rebook Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <h2 class="section-title">How We Work</h2>
+        
+        <div class="process-timeline">
+            <div class="process-step" data-step="1">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Discovery</h3>
+                    <p>Understanding your vision, goals, and audience</p>
+                </div>
+            </div>
+
+            <div class="process-step" data-step="2">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Concept</h3>
+                    <p>Building the creative direction and storytelling approach</p>
+                </div>
+            </div>
+
+            <div class="process-step" data-step="3">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Execution</h3>
+                    <p>Crafting every edit with precision and purpose</p>
+                </div>
+            </div>
+
+            <div class="process-step" data-step="4">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h3>Delivery</h3>
+                    <p>Final refinement and delivery with impact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="section-title">What Clients Say</h2>
+        
+        <div class="testimonials-container">
+            <div class="testimonial" data-testimonial="1">
+                <div class="testimonial-content">
+                    <blockquote>
+                        "Their edits completely transformed our brand narrative. We saw a 340% increase in engagement."
+                    </blockquote>
+                    <footer>
+                        <div class="testimonial-author">Director, Premium Brand</div>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="testimonial" data-testimonial="2">
+                <div class="testimonial-content">
+                    <blockquote>
+                        "Every frame feels intentional. This is editing at the highest level."
+                    </blockquote>
+                    <footer>
+                        <div class="testimonial-author">Creative Lead, Agency</div>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="testimonial" data-testimonial="3">
+                <div class="testimonial-content">
+                    <blockquote>
+                        "We rebook immediately. The quality speaks for itself."
+                    </blockquote>
+                    <footer>
+                        <div class="testimonial-author">Founder, Tech Startup</div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to Create Something Remarkable?</h2>
+            <p class="cta-subtitle">Only taking 3 new projects this quarter</p>
+            <a href="#contact" class="btn btn-primary btn-large">Let's Talk</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <div class="contact-email">
+                    <p>Email</p>
+                    <a href="mailto:editor@laps.com">editor@laps.com</a>
+                </div>
+                <div class="contact-social">
+                    <p>Follow</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 LAPS Edictador. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
